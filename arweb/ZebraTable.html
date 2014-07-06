@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Zebra Tables developed by Abdul Rasheed Ahmed</title>
+    <script type="text/javascript" src="scripts/jquery-1.4.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //This jQuery code uses the nth-child selector to find the odd rows
+            $("#zebratable tr:nth-child(odd)").addClass("striped");
+            //This code swaps the color when we mouseover and mouseout through toggleClass
+            $("#zebratable").mouseover(swapThem).mouseout(swapThem);
+            
+        });
+        //This function toggles the color during the mouseover and mouseout events.
+        function swapThem() {
+            $('tr.zrow').toggleClass('striped');
+        }
+    </script>
+     <style type="text/css">
+      body,td {
+        font-size: 10pt;
+      }
+      table {
+        background-color: none;
+        border: none;
+        border-collapse: collapse;
+        font-family : 'Times New Roman';
+        width: 300px;
+      }
+      th {
+        border-right: 1px solid white;
+        background-color: #0099FF;
+        color: white;
+        font-family : 'Times New Roman';
+        padding: 3px 12px;
+      }
+      tr {
+        background-color: white;
+        font-family : 'Times New Roman';
+        margin: 1px;
+      }
+      tr.striped {
+        background-color: #E2F5FF;
+        font-family : 'Times New Roman';
+      }
+      nonzebratr{
+        background-color: white;
+        font-family : 'Times New Roman';
+        margin: 1px;
+      }
+
+      td {
+        padding: 1px 8px;
+        font-family : 'Times New Roman';
+        text-align : center;
+        border-bottom: 1px solid #B2E6FF;
+      }
+      .blankLine
+      {
+          height:20px;
+      }
+    </style>
+</head>
+<body>
+    <div>
+    <table id="zebratable">
+      <tr class="zrow">
+        <th>Lorem</th>
+        <th>Ipsum</th>
+        <th>Dolor</th>
+        <th>Sit</th>
+        <th>Amet</th>
+      </tr>
+       <tr class="zrow">
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor</td>
+        <td>Sit</td>
+        <td>Amet</td>
+      </tr>
+     <tr class="zrow">
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor</td>
+        <td>Sit</td>
+        <td>Amet</td>
+      </tr>
+     <tr class="zrow">
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor</td>
+        <td>Sit</td>
+        <td>Amet</td>
+      </tr>
+     <tr class="zrow">
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor</td>
+        <td>Sit</td>
+        <td>Amet</td>
+      </tr>
+       <tr class="zrow">
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor</td>
+        <td>Sit</td>
+        <td>Amet</td>
+      </tr>
+      <tr class="zrow">
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor</td>
+        <td>Sit</td>
+        <td>Amet</td>
+      </tr>
+     </table>
+    </div>
+    <div class="blankLine"></div>
+    <div class="blankLine"></div>
+    <div>
+    <table id="nonzebratable">
+       <tr>
+        <th>Lorem</th>
+        <th>Ipsum</th>
+        <th>Dolor</th>
+        <th>Sit</th>
+        <th>Amet</th>
+      </tr>
+       <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor</td>
+        <td>Sit</td>
+        <td>Amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor</td>
+        <td>Sit</td>
+        <td>Amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor</td>
+        <td>Sit</td>
+        <td>Amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor</td>
+        <td>Sit</td>
+        <td>Amet</td>
+      </tr>
+       <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor</td>
+        <td>Sit</td>
+        <td>Amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor</td>
+        <td>Sit</td>
+        <td>Amet</td>
+      </tr>
+     </table>
+    </div>
+</body>
+</html>

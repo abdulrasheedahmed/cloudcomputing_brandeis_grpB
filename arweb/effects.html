@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JQuery Animation developed by Abdul Rasheed Ahmed</title>
+    <script type="text/javascript" src="scripts/jquery-1.4.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#fadeDiv").hide();
+            $("#slideDiv").hide();
+            $("#fadeDiv p").html("FADING..." + $("#fadeDiv").text());
+            $("#slideDiv p").html("SLIDING..." + $("#slideDiv").text());
+
+            //function for fade in animation effect
+            $("#fadein").click(function () {
+                $("#fadeDiv").hide().fadeIn(2000);
+            });
+            //function for fade out animation effect
+            $("#fadeout").click(function () {
+                $("#fadeDiv").fadeOut('slow');
+            });
+            //function for slide in animation effect
+            $("#slidein").click(function () {
+               $("#slideDiv").hide().slideDown('slow');
+            });
+            //function for slide up animation effect
+            $("#slideout").click(function () {
+                $("#slideDiv").slideUp(2500);
+            });
+            
+        });
+
+    
+    </script>
+    <style type="text/css">
+        div p
+        {
+        border: 1px solid #0099FF;
+        background-color: #E2F5FF;
+        width:600px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div>
+    <button id="fadein" value="fadein" type="button">Fade In</button>
+    <button id="fadeout" value="fadeout" type="button">Fade Out</button>
+    <div id="fadeDiv">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus aliquet leo sed hendrerit. Fusce rutrum, quam eget dictum dictum, purus neque ornare magna, ac pretium mauris tortor eget augue. In ut augue nulla.</p>
+    </div>
+    <button id="slidein" value="slidein" type="button">Slide In</button>
+    <button id="slideout" value="slideout" type="button">Slide Out</button>
+    <div id="slideDiv">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus aliquet leo sed hendrerit. Fusce rutrum, quam eget dictum dictum, purus neque ornare magna, ac pretium mauris tortor eget augue. In ut augue nulla.</p>
+    </div>
+    </div>      
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Outdoor links site developed by Abdul Rasheed Ahmed</title>
+    <link rel="stylesheet" type="text/css" href="styles/Outdoor.css" />
+    <script type="text/javascript" src="scripts/Outdoor.js"></script>
+    <script type="text/javascript" src="scripts/jquery-1.4.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.row:nth-child(odd)').addClass("odd");
+            $('.row:nth-child(even)').addClass("even");
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="topsection">
+            <img id="skiimage" src="images/skis.jpg" alt="Ski Image" />
+        </div>
+
+        <div id="leftcolumn">
+            <h4 id="leftcolumnheader">Web Development Technologies. Client side Project</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Skiing.html">Skiing</a></li>
+                <li><a href="Biking.html">Biking</a></li>
+                <li><a href="Hiking.html">Hiking</a></li>
+            </ul>
+        </div>
+
+        <div id="contentcolumn">
+            <h1>Skiing Links</h1>
+            <div class="tablehead">
+                <div class="col">Website Name</div>
+                <div class="col">Description</div>
+            </div>
+            <div class="row">
+                <div class="col"><a href="http://www.alpinezone.com" onclick="return openPage(this,700, 600)">Alpinezone</a></div>
+                <div class="col">Contains forums and news for hiking, biking and skiing in the Northeast.</div>
+            </div>
+            <div class="row">
+                <div class="col"><a href="http://www.skimovie.com" onclick="return openPage(this,700, 600)">Matchstick Productions</a></div>
+                <div class="col">A ski movie producer, who creates a new ski movie each year.</div>
+            </div>
+            <div class="row">
+                <div class="col"><a href="http://www.skiingmag.com" onclick="return openPage(this,700, 600)">Skiing Magazine</a></div>
+                <div class="col">A ski magazine geared toward travel within the ski industry.</div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <a href="http://www.brandeis.edu/rabbgrad/" onclick="return openPage(this,800, 600)">Brandeis University, Rabb School of Graduate Professional Studies</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
